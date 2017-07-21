@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 35px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #696969;
+    text-align: center;
+    font-size: medium;
+    width: 150px;
+    text-decoration: none;
+}
+
+/*li a,i:hover {
+    background-color: lavenderblush;
+}*/
+
+#media-bar ul {
+    list-style-type: none;
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 35px;
+}
+
+#media-bar li {
+    float: left;
+}
+
+#media-bar li a {
+    display: block;
+    color: #696969;
+    text-align: center;
+    width: 60px;
+    text-decoration: none;
+}
