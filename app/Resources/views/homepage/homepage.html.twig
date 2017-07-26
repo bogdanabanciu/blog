@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="height: 500px; width: 1920px;">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active carousel-image">
+                <img src="{{ asset("/pictures/carousel/pic1.jpeg") }}">
+            </div>
+            <div class="item carousel-image">
+                <img src="{{ asset("/pictures/carousel/pic3.jpg") }}">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <div>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- End of Carousel -->
+
+{% endblock %}

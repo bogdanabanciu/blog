@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Gill Sans Ultra Bold";
+}
+
+.widget {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    width: 1560px;
+    height: 130px;
+}

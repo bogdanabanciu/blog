@@ -4,6 +4,20 @@ h1 {
     font-weight: bold;
 }
 
+.brand-font {
+    font-family: Scriptina;
+    text-align: right;
+    font-weight: bold;
+    font-size: 37px;
+    color: black;
+}
+
+.menu-font {
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 20px;
+}
+
+
 /*  Exemplu de font-face !!
 @font-face {
     font-family: 'scriptinaregular';

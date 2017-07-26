@@ -53,7 +53,7 @@
 
 .carousel-image {
     height: 500px;
-    width: 1950px;
+    width: 1920px;
 }
 
 /*
@@ -120,15 +120,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 .zoom-image {
     position: relative;
-    margin: 2%;
+    margin: 30px;
     overflow: hidden;
 }
 
 .zoom-image img {
-    width: 450px;
-    height: 250px;
-    display: block;
-    margin: 0 auto;
+    width: 360px;
+    height: 200px;
 
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;

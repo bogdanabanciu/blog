@@ -10,14 +10,70 @@
             <link rel="stylesheet" href="{{ asset("css/menu-bar.css") }}">
             <link rel="stylesheet" href="{{ asset("css/text-sizes.css") }}">
             <link rel="stylesheet" href="{{ asset("css/images.css") }}">
+            <link rel="stylesheet" href="{{ asset("css/general.css") }}">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body style="background-color: 	#F8F8F8">
+    <header style="width: 1350px; height: 100px;">
+        {% block header %}
+            <nav class="navbar navbar-default navbar-fixed-top" style="border: hidden">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand brand-font" href="#homepage" style="margin-top: 10px;">A Glimpse of Happiness</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-7 collapse navbar-collapse" id="myNavbar" style="margin-top: 15px;">
+                            <ul class="nav navbar-nav menu-font">
+                                <li><a href="#myPage" class="menu-font">Home</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle menu-font" data-toggle="dropdown" href="#">Posts
+                                        <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Travel</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about" class="menu-font">About me</a></li>
+                                <li><a href="#contact" class="menu-font">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        {% endblock %}
+    </header>
+    <body style="background-color: 	#F8F8F8;">
         {% block body %}{% endblock %}
         {% block javascripts %}
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <script src="{{ asset("bootstrap/js/bootstrap.js") }}"></script>
+            <script src="{{ asset("js/toggle.js") }}"></script>
         {% endblock %}
     </body>
+    <footer>
+        {% block footer %}
+            <hr>
+            <ul class="nav nav-pills" style="width: 500px; margin: 0 auto;">
+                <li class="list-style"><a href="https://www.facebook.com/banciu.bogdana" style=" font-family: 'Segoe UI';"><i class="fa fa-facebook" aria-hidden="true"></i> FACEBOOK</a></li>
+                <li class="list-style"><a href="https://www.instagram.com/bogdana.banciu/" style="font-family: 'Segoe UI';"><i class="fa fa-instagram" aria-hidden="true"></i> INSTAGRAM</a></li>
+                <li class="list-style"><a href="https://ro.pinterest.com/bogdana_banciu/" style="font-family: 'Helvetica Neue'"><i class="fa fa-pinterest-p" aria-hidden="true"></i> PINTEREST</a></li>
+            </ul>
+            <hr>
+
+            <!-- SnapWidget -->
+            <iframe src="https://snapwidget.com/embed/415030" class="snapwidget-widget widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+
+            <!-- Footer cu all rights reserved -->
+            <div class="footer">
+                © 2017 Bogdana Banciu. All Rights Reserved.
+            </div>
+        {% endblock %}
+    </footer>
 </html>
