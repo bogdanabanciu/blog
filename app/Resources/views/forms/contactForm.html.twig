@@ -1,0 +1,21 @@
+{{ form_start(contactForm, {'attr' : {'id' : 'contactForm'}}) }}
+    <div style="display: inline-block;">
+        {{ form_row(contactForm.yourName,  {
+            'label' : 'Your Name (required)',
+            'attr'  : { 'style' : 'width: 350px'}
+        }) }}
+        {{ form_row(contactForm.yourEmail,  {
+            'label' : 'Your Email (required)',
+            'attr'  : { 'style' : 'width: 350px'}
+        }) }}
+        {{ form_row(contactForm.subject,  {
+            'label' : 'Subject',
+            'attr'  : { 'style' : 'width: 350px'}
+        }) }}
+        {{ form_row(contactForm.yourMessage,  {
+            'label' : 'Your message',
+            'attr'  : { 'style' : 'width: 500px; height: 200px'}
+        }) }}
+        <input class=" btn btn-secondary" type="submit" value="Send Message">
+    </div>
+{{ form_end(contactForm) }}

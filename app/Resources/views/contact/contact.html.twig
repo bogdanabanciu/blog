@@ -1,1 +1,32 @@
 {% extends 'base.html.twig' %}
+
+{% block body %}
+    <img src="/pictures/carousel/pic1.jpeg" width="1920px" height="500px">
+    <div class="info-inner">
+        <div class="info-inner-content">
+            <h2 style="font-weight: bold; padding-top: 20px;">Contact</h2>
+            <br>
+            <h4 style="font-weight: bold;">Business Inquiries</h4>
+            <p>For business inquiries, please write to contact@aglimpseofhappiness.com, we will get back to you shortly.</p>
+            {% include '/forms/contactForm.html.twig' %}
+        </div>
+    </div>
+{% endblock %}
+
+{# {% block footer %}
+    <hr>
+    <ul class="nav nav-pills" style="width: 500px; margin: 0 auto;">
+        <li class="list-style"><a href="https://www.facebook.com/banciu.bogdana" style=" font-family: 'Segoe UI';"><i class="fa fa-facebook" aria-hidden="true"></i> FACEBOOK</a></li>
+        <li class="list-style"><a href="https://www.instagram.com/bogdana.banciu/" style="font-family: 'Segoe UI';"><i class="fa fa-instagram" aria-hidden="true"></i> INSTAGRAM</a></li>
+        <li class="list-style"><a href="https://ro.pinterest.com/bogdana_banciu/" style="font-family: 'Helvetica Neue'"><i class="fa fa-pinterest-p" aria-hidden="true"></i> PINTEREST</a></li>
+    </ul>
+    <hr>
+
+    <!-- SnapWidget -->
+    <iframe src="https://snapwidget.com/embed/415030" class="snapwidget-widget widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+
+    <!-- Footer cu all rights reserved -->
+    <div class="footer">
+        © 2017 Bogdana Banciu. All Rights Reserved.
+    </div>
+{% endblock %} #}

@@ -41,7 +41,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#about" class="menu-font">About me</a></li>
-                                <li><a href="#contact" class="menu-font">Contact</a></li>
+                                <li><a href="contact" class="menu-font">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,7 +58,8 @@
         {% endblock %}
     </body>
     <footer>
-        {% block footer %}
+        {% block footer %} {% endblock %}
+        {# {% block footer %}
             <hr>
             <ul class="nav nav-pills" style="width: 500px; margin: 0 auto;">
                 <li class="list-style"><a href="https://www.facebook.com/banciu.bogdana" style=" font-family: 'Segoe UI';"><i class="fa fa-facebook" aria-hidden="true"></i> FACEBOOK</a></li>
@@ -74,6 +75,6 @@
             <div class="footer">
                 © 2017 Bogdana Banciu. All Rights Reserved.
             </div>
-        {% endblock %}
+        {% endblock %} #}
     </footer>
 </html>
