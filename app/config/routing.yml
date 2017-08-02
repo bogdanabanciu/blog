@@ -9,3 +9,7 @@ homepage:
 contact:
     path: /contact
     defaults: { _controller: AppBundle:Contact:contact}
+
+about-me:
+    path: /about-me
+    defaults: { _controller: AppBundle:About:about}

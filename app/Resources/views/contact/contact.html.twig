@@ -1,19 +1,23 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <img src="/pictures/carousel/pic1.jpeg" width="1920px" height="500px">
-    <div class="info-inner">
-        <div class="info-inner-content">
-            <h2 style="font-weight: bold; padding-top: 20px;">Contact</h2>
-            <br>
-            <h4 style="font-weight: bold;">Business Inquiries</h4>
-            <p>For business inquiries, please write to contact@aglimpseofhappiness.com, we will get back to you shortly.</p>
-            {% include '/forms/contactForm.html.twig' %}
+    <img src="/pictures/carousel/pic1.jpeg" width="1920px" height="500px" style="z-index: 1;">
+    <div class="container div-contact">
+        <div class="row row-contact">
+            <div class="col-md-10 col-md-push-1">
+                <div class="entry-inner">
+                    <h2 style="font-weight: bold; padding-top: 20px;">Contact</h2>
+                    <br>
+                    <h4 style="font-weight: bold;">Business Inquiries</h4>
+                    <p>For business inquiries, please write to contact@aglimpseofhappiness.com, we will get back to you shortly.</p>
+                    {% include '/forms/contactForm.html.twig' %}
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
 
-{# {% block footer %}
+{% block footer %}
     <hr>
     <ul class="nav nav-pills" style="width: 500px; margin: 0 auto;">
         <li class="list-style"><a href="https://www.facebook.com/banciu.bogdana" style=" font-family: 'Segoe UI';"><i class="fa fa-facebook" aria-hidden="true"></i> FACEBOOK</a></li>
@@ -29,4 +33,4 @@
     <div class="footer">
         © 2017 Bogdana Banciu. All Rights Reserved.
     </div>
-{% endblock %} #}
+{% endblock %}
