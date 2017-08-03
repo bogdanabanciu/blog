@@ -13,3 +13,38 @@
     width: 1560px;
     height: 130px;
 }
+
+.row-post {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.div-post {
+    display: block;
+}
+
+.article-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    box-sizing: border-box;
+}
+
+.article-image {
+    display: table-cell;
+    vertical-align: top;
+    height: 100%;
+    overflow: hidden;
+    width: 45%;
+    position: relative;
+}
+

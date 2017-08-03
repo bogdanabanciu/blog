@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container div-post">
+        <div class="row row-post">
+            <div class="col-md-12">
+                <div style="display: block; box-sizing: border-box;">
+                    <article style="box-sizing: border-box; display: block; margin-bottom: 30px;">
+                        <div class="article-inner">
+                            <div class="article-image">
+                                <img src="{{ asset("/pictures/lavender2.jpg") }}">
+                            </div>
+                            <section>
+                                <header>
+                                    <!--<div></div>-->
+                                    <h2><a href="#">{{ header }}</a></h2>
+                                </header>
+                                <section>
+                                    <p>Lorem ipsum.</p>
+                                    <a href="#">READ MORE</a>
+                                </section>
+                                <!--<footer></footer>-->
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

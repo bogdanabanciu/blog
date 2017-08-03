@@ -13,3 +13,7 @@ contact:
 about-me:
     path: /about-me
     defaults: { _controller: AppBundle:About:about}
+
+test:
+    path: /test
+    defaults: { _controller: AppBundle:Test:test}

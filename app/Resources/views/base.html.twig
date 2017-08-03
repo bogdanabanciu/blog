@@ -31,14 +31,14 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-7 collapse navbar-collapse" id="myNavbar" style="margin-top: 15px;">
                             <ul class="nav navbar-nav menu-font">
-                                <li><a href="#myPage" class="menu-font">Home</a></li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle menu-font" data-toggle="dropdown" href="#">Posts
+                                <li><a href="homepage" class="menu-font">Home</a></li>
+                                <li class="dropdown" role="presentation">
+                                    <a class="dropdown-toggle menu-font" data-toggle="dropdown" role="button" id="dropDownPost" aria-haspopup="true" aria-expanded="false" href="#">Posts
                                         <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Lifestyle</a></li>
-                                        <li><a href="#">Travel</a></li>
-                                        <li><a href="#">Photography</a></li>
+                                    <ul class="dropdown-menu" aria-labelledby="dropDownPost">
+                                        <li><a href="lifestyle">Lifestyle</a></li>
+                                        <li><a href="travel">Travel</a></li>
+                                        <li><a href="photography">Photography</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="about-me" class="menu-font">About me</a></li>
@@ -59,8 +59,7 @@
         {% endblock %}
     </body>
     <footer>
-        {% block footer %} {% endblock %}
-        {# {% block footer %}
+        {% block footer %}
             <hr>
             <ul class="nav nav-pills" style="width: 500px; margin: 0 auto;">
                 <li class="list-style"><a href="https://www.facebook.com/banciu.bogdana" style=" font-family: 'Segoe UI';"><i class="fa fa-facebook" aria-hidden="true"></i> FACEBOOK</a></li>
@@ -76,6 +75,6 @@
             <div class="footer">
                 © 2017 Bogdana Banciu. All Rights Reserved.
             </div>
-        {% endblock %} #}
+        {% endblock %}
     </footer>
 </html>
