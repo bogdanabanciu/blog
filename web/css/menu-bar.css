@@ -25,14 +25,14 @@ li a {
 }
 
 #media-bar li {
-   /* float: left;*/
+    float: left;
 }
 
 #media-bar li a {
     color: #696969;
-    text-align: center;
     text-decoration: none;
-    padding-right: 40px;
+    padding-left: 40px;
+    float: left;
 }
 
 .vertical-menu li a {
@@ -44,4 +44,14 @@ li a {
     list-style-type: none;
     overflow: hidden;
     text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
 }

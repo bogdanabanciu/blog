@@ -12,39 +12,47 @@
             <link rel="stylesheet" href="{{ asset("css/images.css") }}">
             <link rel="stylesheet" href="{{ asset("css/general.css") }}">
             <link rel="stylesheet" href="{{ asset("css/about-me.css") }}">
+            <link rel="stylesheet" href="{{ asset("css/test.css") }}">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <header style="width: 1350px; height: 100px;">
         {% block header %}
-            <nav class="navbar navbar-default navbar-fixed-top" style="border: hidden">
+            <nav class="navbar navbar-default" style="border: hidden">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-3 navbar-header">
+                        <div class="col-md-5 navbar-header" style="margin-right: 10px;">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="sr-only">Navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand brand-font" href="homepage" style="margin-top: 10px;">A Glimpse of Happiness</a>
                         </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-7 collapse navbar-collapse" id="myNavbar" style="margin-top: 15px;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6 collapse navbar-collapse" id="myNavbar" style="margin-top: 15px;">
                             <ul class="nav navbar-nav menu-font">
                                 <li><a href="homepage" class="menu-font">Home</a></li>
-                                <li class="dropdown" role="presentation">
-                                    <a class="dropdown-toggle menu-font" data-toggle="dropdown" role="button" id="dropDownPost" aria-haspopup="true" aria-expanded="false" href="#">Posts
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle menu-font" data-toggle="dropdown" href="#">Posts
                                         <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropDownPost">
+                                    <ul class="dropdown-menu">
                                         <li><a href="lifestyle">Lifestyle</a></li>
                                         <li><a href="travel">Travel</a></li>
                                         <li><a href="photography">Photography</a></li>
                                     </ul>
-                                </li>
                                 <li><a href="about-me" class="menu-font">About me</a></li>
                                 <li><a href="contact" class="menu-font">Contact</a></li>
                             </ul>
                         </div>
+                        <!--<div class="col-sm-3">
+                            <ul id="media-bar">
+                                <li><a href="https://www.facebook.com/banciu.bogdana" style=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/bogdana.banciu/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://ro.pinterest.com/bogdana_banciu/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>-->
                     </div>
                 </div>
             </nav>

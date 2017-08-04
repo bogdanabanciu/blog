@@ -123,6 +123,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\AboutController::aboutAction',  '_route' => 'about-me',);
         }
 
+        // test
+        if ('/test' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\TestController::testAction',  '_route' => 'test',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
